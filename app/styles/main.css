@@ -1,12 +1,15 @@
- @font-face {
+@font-face {
      font-family: "icon-font";
-     src: url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype");
- }
- .km-icon:after, .km-icon:before {
-     font: 1em/1em"FontAwesome";
- }
+     /* src: url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype"); */
+	 src: url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"); 
+}
 
-html, body {
+.km-icon:after, .km-icon:before {
+	font: "icon-font";
+    /* font: 1em/1em"FontAwesome"; */ 
+}
+
+html, body 
     width: 100%;
     height: 100%;
 }
@@ -16,25 +19,25 @@ html, body {
  *
  ***********************************************************/
  .km-food:before, .km-food:after {
-     content: '\f0f5';
+     content: '\e605';
  }
  .km-info:before, .km-info:after {
-     content: '\f05a';
+     content: '\e606';
  }
  .km-picture:before, .km-picture:after {
-     content: '\f03e';
+     content: '\e601';
  }
  .km-video:before, .km-video:after {
      content: '\f008';
  }
  .km-basket:before, .km-basket:after {
-     content: '\f07a';
+     content: '\e603';
  }
  .km-award:before, .km-award:after {
-     content: '\f091';
+     content: '\e604';
  }
  .km-pencil:before, .km-pencil:after {
-     content: '\f040';
+     content: '\e600';
  }
  .km-phone-icon:before, .km-phone-icon:after {
      content: '\e802';
@@ -43,7 +46,7 @@ html, body {
      content: '\e80a';
  }
  .km-menu:before, .km-menu:after {
-     content: '\f0c9';
+     content: '\e607';
  }
 
  .km-drawer-button:before, .km-drawer-button:after {
@@ -75,7 +78,7 @@ html, body {
   *
   ************************************************************************/
 .km-navbar {
-    background-color: rgba(93,64,55,1) !important;
+    background-color: rgba(204,63,53,0.92) !important;
     color:white !important;
 }
 
@@ -108,7 +111,7 @@ html, body {
     background-size: 70%;
  }
  #appDrawer .km-content, #editProfileDrawer .km-content {
-    background-color: #5d4037;
+    background-color: #81AE39;
  }
  #appDrawer ul {
     padding-left: 20px;
@@ -138,7 +141,7 @@ html, body {
     color: white;
  }
  #user-panel {
-    background-color: #4a332c;
+    background-color: #F15A29;
     height: 130px;
  }
  #user-panel img {
@@ -178,7 +181,7 @@ html, body {
 
  #edit-link:before {
     font: 1em/1em"icon-font";
-    content: '\e808';
+    content: '\e600';
  }
 
  #edit-buttons {
@@ -273,4 +276,4 @@ html, body {
 
 #editProfileDrawer #side-header {
     height: 24%;
-}
+} 
